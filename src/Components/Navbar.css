@@ -1,0 +1,28 @@
+
+.fa-heart:before {
+    content: "\f004";
+    color: #ec008c; 
+  
+    
+}
+.fa-bag-shopping:before{
+    color: #ec008c;  
+}
+
+.fa-user:before {
+    content: "\f004";
+    color: #ec008c; 
+  
+    
+}
+
+
+.Link{
+    width: 124px;
+    height: 29px;
+    text-decoration: none;
+    color: #000;
+    font-size: 19px;
+    font-weight: bold;
+    padding: 6px 8px;
+}
