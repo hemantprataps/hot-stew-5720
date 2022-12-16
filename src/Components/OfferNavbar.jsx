@@ -21,7 +21,7 @@ function OffNavbar() {
 
 
 
-                    <Box w="152px" bg="black" h="60px"></Box>
+                    <Box w="140px" bg="black" h="60px"></Box>
                     <Box ><Text fontSize="lg">Get 10% OFF on your purchase. Use Code:<br /> BEAUTY10</Text></Box>
                     <Box w="152px" h="60px" bg="black"></Box>
 
