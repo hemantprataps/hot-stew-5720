@@ -1,10 +1,14 @@
-import { Grid, GridItem, Image, Box, Flex, Link, Text, Button } from '@chakra-ui/react'
+import { Grid, GridItem, Image, Box, Flex, Link, Text, Button, Input } from '@chakra-ui/react'
 import { Fragment } from 'react';
-import ScrollButton from './components/TopButton';
-import { Content, Heading } from './components/Styles';
+// import ScrollButton from './components/TopButton';
+// import { Content, Heading } from './components/Styles';
+import Navbar from './Navbar';
+import "./Home.css"
+import Footer from './Footer';
 function Home() {
 
     return (<div position="realtive">
+        <Navbar />
         <Fragment>
             <div id="demo" className="carousel slide" data-ride="carousel">
 
@@ -200,7 +204,9 @@ function Home() {
                     <GridItem><Image w="379px" h="379px" src="https://logan.nnnow.com/content/dam/nnnow-project/24dec19/23DEC19_BLOG4.jpg" /></GridItem>
                 </Grid>
             </Flex>
-            <Box> </Box>
+            <Box> <Button>Back To top</Button></Box>
+
+            <Footer />
         </Fragment>  </div>
 
     )

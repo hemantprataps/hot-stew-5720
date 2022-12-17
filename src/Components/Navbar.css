@@ -31,3 +31,6 @@
     font-size: large;
     font-weight: bold;
 }
+.stick{
+    position: sticky;
+}
