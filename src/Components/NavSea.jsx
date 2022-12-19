@@ -1,11 +1,6 @@
 import {
-    Box, Flex, Image, Text, Input
-
-} from "@chakra-ui/react"
-
-import {
-
-    Menu,
+    Box, Flex, Image, Text, Input, Button,
+    useDisclosure, Menu,
     MenuButton,
     MenuList,
     MenuItem,
@@ -14,11 +9,14 @@ import {
     MenuOptionGroup,
     MenuOption,
 
-    Button,
-    useDisclosure,
+} from "@chakra-ui/react"
+import { NavLink } from "react-router-dom";
+import { useContext } from "react";
+import Login from "../AllRoutes/Login";
 
-} from '@chakra-ui/react'
+
 import StickyNav from "./Stickynav"
+import PersonIcon from '@mui/icons-material/Person';
 import { ChevronDownIcon } from "@chakra-ui/icons"
 import { SearchIcon, CloseIcon } from '@chakra-ui/icons'
 import { useState } from "react"
@@ -27,10 +25,6 @@ import { motion } from "framer-motion";
 import "./Navbar.css"
 function NavSea() {
     const [sty, setSty] = useState(true)
-    const [sale, setSale] = useState(false)
-    const [Skin, setSkin] = useState(false)
-
-    const { isOpen, onOpen, onClose } = useDisclosure();
 
     const cross = () => {
 
@@ -73,7 +67,7 @@ function NavSea() {
 
                     <Box w="60px" mt="30px"><i className="fa-solid fa-bag-shopping fa-2x"></i></Box>
 
-                    <Box display="flex" w="90px" mt="30px"><i className="fa-solid fa-user fa-2x"></i><Text textAlign="center" fontSize="20px" mt="2px" ml="20PX">LOGIN</Text> </Box>
+                    <Box display="flex" w="90px" mt="30px"><i class="fa-regular fa-user fa-2x"></i><Text textAlign="center" fontSize="20px" mt="2px" ml="20PX"><Login /></Text> </Box>
                 </Box>
 
 

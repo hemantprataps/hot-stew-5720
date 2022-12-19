@@ -207,7 +207,8 @@ function Home() {
             <Box> <Button>Back To top</Button></Box>
 
             <Footer />
-        </Fragment>  </div>
+        </Fragment>
+    </div>
 
     )
 
