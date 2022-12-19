@@ -1,12 +1,15 @@
 
-import Navbar from './AllRoutes/Navbar';
+import Router from './AllRoutes/Router';
+
 import './App.css';
 
 function App() {
   return (
     <div className="App">
 
-      <Navbar />
+      <Router />
+
+
 
     </div>
   );
