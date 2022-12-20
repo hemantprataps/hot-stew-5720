@@ -6,34 +6,18 @@ import {
     UnorderedList,
     Flex,
     Table,
-    Thead,
-    Tbody,
-    Tfoot,
-    Tr,
-    Th,
-    Td,
-    TableCaption,
-    TableContainer,
-    Menu,
-    MenuButton,
-    MenuList,
-    MenuItem,
-    MenuGroup,
-    MenuDivider,
-    MenuOptionGroup,
-    MenuOption,
-    Text,
-    Button,
-    useDisclosure,
-} from "@chakra-ui/react"
-import { ChevronDownIcon } from "@chakra-ui/icons"
 
+    Text,
+
+} from "@chakra-ui/react"
+
+import { Link } from "react-router-dom"
 import "./Navbar.css"
 export const Sale = () => {
-    const { isOpen, onOpen, onClose } = useDisclosure();
+
     return <div>
         <div className="dropdown">
-            <button className="dropbtn">SKINCARE</button>
+            <Text className="dropbtn">SKINCARE</Text>
             <div className="dropdown-content">
                 <Box w="90%" >
 
@@ -42,7 +26,8 @@ export const Sale = () => {
 
                             <Table>
                                 <ListItem className="Bold">FACE</ListItem>
-                                <ListItem>BB & CC Cream</ListItem>
+
+                                <Link to={`/makeup`}> <ListItem>Foundation</ListItem></Link>
                                 <ListItem>ConCealer</ListItem>
                                 <ListItem>Face Primer</ListItem>
                                 <ListItem>Highlighter</ListItem>

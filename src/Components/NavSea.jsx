@@ -1,29 +1,22 @@
 import {
     Box, Flex, Image, Text, Input, Button,
-    useDisclosure, Menu,
-    MenuButton,
-    MenuList,
-    MenuItem,
-    MenuGroup,
-    MenuDivider,
-    MenuOptionGroup,
-    MenuOption,
+
 
 } from "@chakra-ui/react"
 import { NavLink } from "react-router-dom";
 import { useContext } from "react";
-import Login from "../AllRoutes/Login";
-
+import LoginButton from "../AllRoutes/Login";
+import LogoutButton from "../AllRoutes/LogOut";
 
 import StickyNav from "./Stickynav"
-import PersonIcon from '@mui/icons-material/Person';
-import { ChevronDownIcon } from "@chakra-ui/icons"
+import { useAuth0 } from "@auth0/auth0-react";
 import { SearchIcon, CloseIcon } from '@chakra-ui/icons'
 import { useState } from "react"
-import { Sale, SKINCARE } from "./Options"
-import { motion } from "framer-motion";
+
 import "./Navbar.css"
 function NavSea() {
+
+    const { user, isAuthenticated, isLoading } = useAuth0();
     const [sty, setSty] = useState(true)
 
     const cross = () => {
@@ -67,7 +60,10 @@ function NavSea() {
 
                     <Box w="60px" mt="30px"><i className="fa-solid fa-bag-shopping fa-2x"></i></Box>
 
-                    <Box display="flex" w="90px" mt="30px"><i class="fa-regular fa-user fa-2x"></i><Text textAlign="center" fontSize="20px" mt="2px" ml="20PX"><Login /></Text> </Box>
+                    <Box display="flex" w="90px" mt="30px"><i class="fa-regular fa-user fa-2x"></i><Text textAlign="center" fontSize="20px" mt="2px" ml="20PX">
+
+                        {isAuthenticated ? <LogoutButton /> : <LoginButton />}
+                    </Text> </Box>
                 </Box>
 
 

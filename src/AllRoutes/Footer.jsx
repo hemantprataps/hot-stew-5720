@@ -62,7 +62,14 @@ function Footer() {
             <Link className='L'>FREQUENTLY ASKED QUESTIONS</Link>
             <Link className='L'>CONTACT US</Link>
         </Box>
+        <Flex mt="-20px" ml="600px" alignItems="center">
+            <Box
+                mr="20px"><i className="fa-brands fa-facebook fa-2x"></i></Box>
+            <Box mr="20px"><i class="fa-brands fa-instagram fa-2x"></i></Box>
+            <Box mr="20px" ><i class="fa-brands fa-twitter fa-2x"></i></Box>
 
+            <Box><i class="fa-brands fa-youtube fa-2x"></i></Box>
+        </Flex>
     </div>
 }
 

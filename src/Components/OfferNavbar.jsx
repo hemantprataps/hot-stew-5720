@@ -1,50 +1,72 @@
 
 import { Box, Flex, Image, Text } from "@chakra-ui/react"
 
-
+import "./Navbar.css"
 function OffNavbar() {
     return (<div>
         <Box >
 
-            <Box>
+            <Box className="bgc">
                 <Flex>
                     <Box>
 
-                        <Flex> <Image src="https://cdn02.nnnow.com/web-images/master/navtree_metaData/59b2425ae4b0d70964ee66e0/1505806763887/12NNNOWLOGODESKTOP.png" ></Image>
+                        <Flex> <Image w="110px" h="38px" src="https://i.ibb.co/0Gxb5Zg/nnnow-logo-1.jpg" ></Image>
                         </Flex>
 
 
 
                     </Box>
 
-                    <Box w="152px" h="60px" bg="red" className="Location"> <Text>location</Text></Box>
+                    <Flex ml="8px" mt="10px" w="152px" h="60px" bg="" className="Location">
+                        <Box mt="3px" mr="4px" > <i className="fa-solid fa-location-dot "></i>
+
+                        </Box>  <Text>Store Locator</Text>
+                    </Flex>
 
 
 
-                    <Box w="140px" bg="black" h="60px"></Box>
+                    <Box w="140px" h="60px" >
+                        <Flex mt="15px">   <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+
+                        </Flex>
+                    </Box>
                     <Box ><Text fontSize="lg">Get 10% OFF on your purchase. Use Code:<br /> BEAUTY10</Text></Box>
-                    <Box w="152px" h="60px" bg="black"></Box>
 
-                    <Box>
-                        <Flex>
-                            <Box>logo</Box>
-                            <Box><Text>GetApp</Text></Box>
+                    <Box w="140px" h="60px">
+                        <Flex mt="13px" ml="50px">   <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+
                         </Flex>
                     </Box>
 
-                    <Box>
-                        <Flex>
-                            <Box>logo</Box>
-                            <Box><Text>GetApp</Text></Box>
-                        </Flex>
-                    </Box>
+                    <Flex ml="70px" className="fgh" >
+                        <Box mt="13px" ml="5px">
+                            <Flex>
+                                <Box><i className="fa-solid fa-download"></i></Box>
+                                <Box ml="10px"><Text>GetApp</Text></Box>
+                            </Flex>
+                        </Box>
 
-                    <Box>
-                        <Flex>
-                            <Box>logo</Box>
-                            <Box><Text>GetApp</Text></Box>
-                        </Flex>
-                    </Box>
+                        <Box mt="13px" ml="50px">
+                            <Flex>
+                                <Box ml="10px"><i className="fa-solid fa-box-open"></i></Box>
+                                <Box ml="10px"><Text>Track Order</Text></Box>
+                            </Flex>
+                        </Box>
+
+                        <Box mt="13px" ml="50px">
+                            <Flex>
+                                <Box><i className="fa-solid fa-trophy"></i></Box>
+                                <Box ml="10px"><Text>GetApp</Text></Box>
+                            </Flex>
+                        </Box>
+
+                    </Flex>
+
+
 
                 </Flex>
             </Box>
@@ -55,7 +77,7 @@ function OffNavbar() {
 
 
 
-    </div>
+    </div >
 
     )
 }

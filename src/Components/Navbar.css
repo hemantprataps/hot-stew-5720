@@ -8,15 +8,31 @@
 .fa-bag-shopping:before{
     color: #ec008c;  
     cursor: pointer;
+  
 }
-
+.fa-location-dot:before{
+  color: #ec008c;  
+  cursor: pointer;
+}
 .fa-user:before {
     
     color: #ec008c; 
   
     cursor: pointer;
 }
+.fa-star{
+  color: #704280;
+}
 
+ .fa-star:nth-child(2) {
+  color:#ffc001
+}
+.bgc{
+  background-color: #f3f3f3;
+}
+.fa-star:nth-child(3){
+  color: #ec008c;  
+}
 
 .Link{
     width: 124px;
@@ -56,19 +72,28 @@
     color: #000;
     font-size: 19px;
     font-weight: bold;
+    position: relative;
+display: contents;
+cursor: pointer;
     margin-top: -11px;
   }
-  
+.newbtn{
+  border: none;
+  background-color: white;
+  cursor: pointer;
+    font-size: .77778rem;
+    width: 50px;
+}
   .drobdown {
     position: relative;
-    display: inline-block;
+    display: inline-block;cursor: pointer;cursor: pointer;
   }
   
   .dropdown-content {
     display: none;
     background: #f1f1f1;
     min-width: 160px;
-   
+    cursor: pointer;
     z-index: 1;
     box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
   }
@@ -78,15 +103,15 @@
     color: #000;
     text-decoration: none;
     padding: 17px;
-    font-size: 18px;
+    font-size: 18px;cursor: pointer;
   }
   
   .dropdown-content a:hover {
-    background: #ddd;
+    background: #ddd;cursor: pointer;
   }
   
   .dropdown:hover .dropdown-content {
-    display: block;
+    display: block;cursor: pointer;
   }
   
   .dropdown:hover .dropbtn {
@@ -95,3 +120,18 @@
   .stick:hover{
     top: 0;
   }
+.fa-download{
+  color: #ec008c;
+}
+
+.fgh{
+  justify-content: space-between;
+}
+
+.fa-box-open{
+  color: #ec008c;
+}
+
+.fa-trophy{
+  color: #ec008c;
+}
