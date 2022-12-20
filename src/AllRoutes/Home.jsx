@@ -100,7 +100,7 @@ function Home() {
             <Flex w="90%" m="auto" mb="100px">
 
                 <Box w="50%" h="433px">
-
+                    <Image w="500px" h="318px" src="https://logan.nnnow.com/content/dam/nnnow-project/16-dec-2022/Tile2.png" />
                 </Box>
                 <Box w="50%" h="433px">
                     <Link>

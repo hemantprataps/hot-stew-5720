@@ -188,7 +188,7 @@ font-weight: bold;
 
 .login{
     top: 0;
-    position: absolute;
+    position: relative;
     width: 100%;
     height: 100vh;
    
@@ -210,4 +210,20 @@ font-weight: bold;
     font-weight: bolder
     ;font-family:  Avenir-NextBold;
     text-align: center;
+}
+.rrrr{
+    margin-left: 900px;
+}
+
+.show{
+    width: 12%;
+    height: 100px;
+    background-color: turquoise;
+    position: absolute;
+    z-index: -1;
+   
+}
+
+.fa-twitter:before:hover{
+    color: #f39;
 }

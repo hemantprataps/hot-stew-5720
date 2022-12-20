@@ -6,6 +6,8 @@ import InnerImageZoom from 'react-inner-image-zoom';
 import { Box, Button, Flex, Image, Text } from "@chakra-ui/react"
 import Navbar from "./Navbar";
 import Footer from "./Footer";
+import Bag from "./Bag";
+
 import "./Home.css"
 function SingleProduct() {
 
@@ -18,6 +20,7 @@ function SingleProduct() {
             .then((res) => {
                 console.log(res.data);
                 setData(res.data);
+
             })
     }
 
@@ -92,11 +95,11 @@ function SingleProduct() {
 
 
                 </Flex>
-                <Box><Button className="bagBtn"> ADD TO BAG</Button></Box>
+                <Box><Button onClick={() => <Bag data={data} />} className="bagBtn"> ADD TO BAG</Button></Box>
             </Box>
         </Flex>
 
-
+        <Footer />
     </div>
 
 

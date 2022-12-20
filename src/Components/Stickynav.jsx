@@ -3,7 +3,7 @@ import {
 
 } from "@chakra-ui/react"
 
-
+import { Link } from "react-router-dom"
 
 import { useState, useRef } from "react"
 import { Sale, SKINCARE } from "./Options"
@@ -37,7 +37,7 @@ function StickyNav() {
         <Flex mb="20px" w="100%" justifyContent="space-between" as="header" ref={exampleRef}
             onScrollCapture={clickme} >
             <Box className="Link" >
-                <Text >SALE</Text>
+                <Link to={`/sale`}> <Text >SALE</Text></Link>
             </Box>
 
             <Box >
